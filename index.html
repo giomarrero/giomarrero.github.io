@@ -3,43 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gio Marrero</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Gio Marrero - Personal Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
 </head>
-<body>
-    <header>
-        <h1>  Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+<body class="bg-gray-50">
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-gray-800">Gio Marrero</h1>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#home" class="text-gray-600 hover:text-blue-600 transition">Home</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-blue-600 transition">About</a></li>
+                    <li><a href="#projects" class="text-gray-600 hover:text-blue-600 transition">Projects</a></li>
+                    <li><a href="#contact" class="text-gray-600 hover:text-blue-600 transition">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section. You can introduce your website here.</p>
+
+    <main class="pt-20">
+        <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-indigo-50">
+            <div class="container mx-auto px-6 py-20 text-center">
+                <h2 class="text-5xl font-bold text-gray-800 mb-4">Welcome! I'm Gio Marrero</h2>
+                <p class="text-xl text-gray-600 mb-8">Data Scientist & Web Developer</p>
+                <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition">Get in Touch</a>
+            </div>
         </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>This is the about section. Share some information about yourself or your website.</p>
+
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">About Me</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <img src="/api/placeholder/400/400" alt="Profile" class="rounded-lg shadow-lg">
+                    </div>
+                    <div class="space-y-4">
+                        <p class="text-gray-600">I'm a passionate data scientist and web developer with expertise in creating data-driven solutions and modern web applications. I combine analytical thinking with creative problem-solving to deliver impactful results.</p>
+                        <div class="grid grid-cols-2 gap-4 mt-6">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">Skills</h3>
+                                <ul class="text-gray-600">
+                                    <li>Python</li>
+                                    <li>R</li>
+                                    <li>JavaScript</li>
+                                    <li>Machine Learning</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <h3 class="font-bold text-gray-800 mb-2">Education</h3>
+                                <ul class="text-gray-600">
+                                    <li>Data Science, MS</li>
+                                    <li>Computer Science, BS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="services">
-            <h2>Services</h2>
-            <p>This is the services section. Describe the services you offer.</p>
+
+        <section id="projects" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Featured Projects</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="/api/placeholder/400/300" alt="Project 1" class="w-full">
+                        <div class="p-6">
+                            <h3 class="font-bold text-gray-800 mb-2">Data Analysis Project</h3>
+                            <p class="text-gray-600 mb-4">Advanced analytics project using Python and Machine Learning</p>
+                            <a href="#" class="text-blue-600 hover:text-blue-700">Learn More →</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="/api/placeholder/400/300" alt="Project 2" class="w-full">
+                        <div class="p-6">
+                            <h3 class="font-bold text-gray-800 mb-2">Web Application</h3>
+                            <p class="text-gray-600 mb-4">Full-stack web application built with modern technologies</p>
+                            <a href="#" class="text-blue-600 hover:text-blue-700">Learn More →</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="/api/placeholder/400/300" alt="Project 3" class="w-full">
+                        <div class="p-6">
+                            <h3 class="font-bold text-gray-800 mb-2">ML Model Deployment</h3>
+                            <p class="text-gray-600 mb-4">End-to-end machine learning model deployment</p>
+                            <a href="#" class="text-blue-600 hover:text-blue-700">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>This is the contact section. Provide your contact details or a contact form here.</p>
+
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Get in Touch</h2>
+                <div class="max-w-2xl mx-auto">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Name</label>
+                                <input type="text" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500">
+                            </div>
+                            <div class="md:col-span-2">
+                                <label class="block text-gray-700 mb-2">Message</label>
+                                <textarea rows="4" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-1 focus:ring-blue-500"></textarea>
+                            </div>
+                        </div>
+                        <button class="mt-6 bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition w-full">Send Message</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">Gio Marrero</h3>
+                    <p class="text-gray-400">Data Scientist & Web Developer</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">LinkedIn</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">GitHub</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Twitter</a>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2025 Gio Marrero. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
